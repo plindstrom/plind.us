@@ -1,0 +1,100 @@
+/*
+  File Name  global.css
+  Project    plind.us
+  Version    8.1.4
+  Author     Peter Lindstrom
+  Purpose    Global styles utilized throughout the site.
+  Copyright  2003-2020, Peter Lindstrom
+  Link       https://github.com/plindstrom/plind.us
+*/
+
+html,body,header,footer,nav,main,section,article,aside,h1,h2,h3,h4,h5,h6,ol,ul,img,p{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+html{
+	font-size: 100%;
+}
+
+header,nav,main,footer{ 
+	width: 75%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+header{
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	border-bottom: 1px solid #888;
+	text-align: center;
+}
+
+nav{
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav li{
+	display: inline;
+}
+
+nav a{
+	margin: 0 2rem;
+}
+
+main{
+	margin-top: 1rem;
+	padding-top: 1rem;
+}
+
+footer{
+	clear: both;
+	margin-top: 1rem;
+	padding-top: 1rem;
+	border-top: 1px solid #888;
+}
+
+h2{
+	margin: 0 0 1.4rem 0;
+}
+
+p{
+	margin: 0 0 1.4rem 0;
+}
+
+.no-margin-bottom{
+	margin-bottom: 0;
+}
+
+.list-standard{
+	margin: 0 0 1.4rem 0;
+}
+
+.list-standard li{
+	margin-left: 2rem;
+}
+
+.satori{
+	float: right;
+	width: 200px;
+	height: 200px;
+	/*margin: 0.2rem 1.5rem 1.5rem 0;*/
+	margin: 0.2rem 0 1.5rem 1.5rem;
+	border: 1px solid #000;
+}
+
+.satori-box{
+	float: left;
+	width: 10px;
+	height: 10px;
+	transition: background-color 1s;
+}

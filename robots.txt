@@ -1,0 +1,13 @@
+# File Name  robots.txt
+# Project    plind.us
+# Version    8.0.1
+# Author     Peter Lindstrom
+# Purpose    Used by spiders to allow/disallow indexing of certain pages.
+# Copyright  2003-2020, Peter Lindstrom
+# Link       https://github.com/plindstrom/plind.us
+
+User-agent: *
+Disallow: /css/
+Disallow: /img/
+Disallow: /inc/
+Disallow: /js/
