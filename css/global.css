@@ -84,17 +84,41 @@ p{
 }
 
 .satori{
-	float: right;
-	width: 200px;
-	height: 200px;
-	/*margin: 0.2rem 1.5rem 1.5rem 0;*/
-	margin: 0.2rem 0 1.5rem 1.5rem;
+	width: 160px;
+	height: 160px;
+	margin: 0 auto 1.5rem auto;
 	border: 1px solid #000;
 }
 
 .satori-box{
 	float: left;
-	width: 10px;
-	height: 10px;
-	transition: background-color 1s;
+	width: 8px;
+	height: 8px;
+	transition: background-color 1s;	
+}
+
+@media only screen and (min-width: 480px){
+	.satori{
+		width: 180px;
+		height: 180px;
+	}
+
+	.satori-box{
+		width: 9px;
+		height: 9px;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.satori{
+		float: right;
+		width: 200px;
+		height: 200px;
+		margin: 0.2rem 0 1.5rem 1.5rem;
+	}
+
+	.satori-box{
+		width: 10px;
+		height: 10px;
+	}
 }
