@@ -1,7 +1,7 @@
 /*
   File Name  global.css
   Project    plind.us
-  Version    8.1.4
+  Version    8.1.5
   Author     Peter Lindstrom
   Purpose    Global styles utilized throughout the site.
   Copyright  2003-2020, Peter Lindstrom
@@ -94,7 +94,7 @@ p{
 	float: left;
 	width: 8px;
 	height: 8px;
-	transition: background-color 1s;	
+	transition: background-color 2s;	
 }
 
 @media only screen and (min-width: 480px){

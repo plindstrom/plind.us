@@ -2,7 +2,7 @@
 /*
   File Name  inc-global.php
   Project    plind.us
-  Version    8.1.1
+  Version    8.1.2
   Author     Peter Lindstrom
   Purpose    Global PHP functions utilized throughout the site.
   Copyright  2003-2020, Peter Lindstrom
@@ -32,7 +32,7 @@ function Page_Init($pgTitle){
 	print("	<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/global.css\" />\n");
 	print("	<script type=\"text/javascript\" src=\"/js/jquery-3.4.1.min.js\"></script>\n");
 	print("	<script type=\"text/javascript\" src=\"/js/global.js\"></script>\n");
-	print("	<script type=\"text/javascript\" src=\"/js/satori-1.0.0.js\"></script>\n");
+	print("	<script type=\"text/javascript\" src=\"/js/satori-1.0.1.js\"></script>\n");
 	print("</head>\n");
 }
 
