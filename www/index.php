@@ -1,5 +1,5 @@
 <?php
-require("scripts/inc-global.php");
+require("../www-bin/inc-global.php");
 
 Page_Init("");
 Page_Header(0);
