@@ -2,7 +2,7 @@
 /*
   File Name  inc-global.php
   Project    plind.us
-  Version    8.1.2
+  Version    8.1.3
   Author     Peter Lindstrom
   Purpose    Global PHP functions utilized throughout the site.
   Copyright  2003-2020, Peter Lindstrom
@@ -116,13 +116,18 @@ function Get_Fact(){
 	return $facts[rand(0,10)];
 }
 
-// Parse wx from XML -----------------------------
+
+// Output weather information from XML ----------
 function Get_Wx(){
-	$wx = simplexml_load_file("path_to_file/wx.xml") or die("Error: Cannot retrieve the weather.");
+	// Load config from ini file
+	$cfg = parse_ini_file("cfg-path.ini", true);
+
+	// Parse weather xml file
+	$wx = simplexml_load_file($cfg[weather][xmlpath]) or die("Error: Cannot retrieve the weather.");
 	$weather = $wx->weather;
 	$temp_f = $wx->temp_f;
-		
-	$output = "${temp_f}&deg; F, ${weather}";
 	
+	// Format output and return
+	$output = "${temp_f}&deg; F, ${weather}";
 	return $output;
 }

@@ -1,0 +1,5 @@
+[dbname]
+hostname=dbhost
+username=dbuser
+password=dbpass
+database=dbname
