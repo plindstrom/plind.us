@@ -2,7 +2,7 @@
 /*
   File Name  inc-global.php
   Project    plind.us
-  Version    8.1.3
+  Version    8.1.4
   Author     Peter Lindstrom
   Purpose    Global PHP functions utilized throughout the site.
   Copyright  2003-2020, Peter Lindstrom
@@ -64,6 +64,8 @@ function Page_Header(){
 // Page footer ------------------------------------
 function Page_Footer(){
 	print("	<footer>\n");
+	printf("		<p class=\"align-left\">Last updated: <em>%s</em>.</p>\n",Get_LastModified());
+	print("		<p class=\"align-right\">&copy Copyright 2003-" . date("Y") . ".</p>\n");
 	print("	</footer>\n");
 }
 
@@ -94,6 +96,19 @@ function Get_Env(){
 	}
 	
 	return $envProd;
+}
+
+
+// Get last modified ----------------------------
+function Get_LastModified(){
+	$fn = "../test" . $_SERVER['SCRIPT_NAME'];
+	if(file_exists($fn)){
+		$modTime = date("F d Y H:i:s", filemtime($fn));
+	} else {
+		$modTime = "Not really sure";
+	}
+
+	return $modTime;
 }
 
 

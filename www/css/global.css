@@ -61,6 +61,7 @@ footer{
 	margin-top: 1rem;
 	padding-top: 1rem;
 	border-top: 1px solid #888;
+	font-size: 0.8rem;
 }
 
 h2{
@@ -81,6 +82,14 @@ p{
 
 .list-standard li{
 	margin-left: 2rem;
+}
+
+.align-left{
+	float: left;
+}
+
+.align-right{
+	float: right;
 }
 
 .satori{
