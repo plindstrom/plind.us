@@ -2,27 +2,54 @@
 /*
   File Name  inc-global.php
   Project    plind.us
-  Version    8.1.3
+  Version    8.1.5
   Author     Peter Lindstrom
   Purpose    Global PHP functions utilized throughout the site.
   Copyright  2003-2020, Peter Lindstrom
   Link       https://github.com/plindstrom/plind.us
+
+  FUNCTIONS ------------------------------------------------------------------
+    1. Page_Init
+       Prints html required to start the page (html, head, body).
+
+    2. Page_End
+       Stops page gen timer and prints html required to end the page 
+       (/body, /html).
+
+    3. Page_Header
+       Prints html required for page header (header).
+
+    4. Page_Footer
+       Prints html required for page footer (footer).
+
+    5. Get_CWD
+       Returns the current working directory as found in the url.
+
+    6. Get_Env
+       Returns if page is running in non-prod or prod based on the url.  Can
+       also use an override to force prod on a non-prod url for testing.
+
+    7. Get_LastModified
+       Returns the date and time that the current file was last modified.
+
+    8. Get_Fact
+       Returns a random fact from an array of fun(ish) facts.
+
+    9. Get_Wx
+       Returns the current weather info using data from a weather xml file.
 */
 
-// Start timer ------------------------------------
+
+// Start timer ---------------------------------------------------------------
 $mTime = microtime();
 $mTime = explode(" ",$mTime);
 $mTime = $mTime[1] + $mTime[0];
 $tStart = $mTime;
 
 
-// Setup page -------------------------------------
-function Setup_Page(){
-}
-
-
-// Page setup -------------------------------------
+// Page setup ----------------------------------------------------------------
 function Page_Init($pgTitle){
+	// Print page beginning html
 	print("<!DOCTYPE HTML>\n");
 	print("<html lang=\"en\">\n");
 	print("<head>\n");
@@ -34,10 +61,11 @@ function Page_Init($pgTitle){
 	print("	<script type=\"text/javascript\" src=\"/js/global.js\"></script>\n");
 	print("	<script type=\"text/javascript\" src=\"/js/satori-1.0.1.js\"></script>\n");
 	print("</head>\n");
+	print("<body>\n");
 }
 
 
-// Page ending ------------------------------------
+// Page ending ---------------------------------------------------------------
 function Page_End(){
 	// Stop the timer and get page generation time
     global $tStart;
@@ -46,59 +74,90 @@ function Page_End(){
     $mTime = $mTime[1] + $mTime[0];
     $tEnd = $mTime;
     $ttlTime = ($tEnd - $tStart);
+
+    // Print page end html
 	print("</body>\n");
 	print("</html>\n");
+	print("<!-- (c) Copyright 2003-" . date("Y") . ". -->\n");
 	printf("<!-- Page generated in %f seconds. -->",$ttlTime);
 }
 
 
-// Page header ------------------------------------
+// Page header ---------------------------------------------------------------
 function Page_Header(){
-	print("<body>\n");
+	// Print page header html
 	print("	<header>\n");
 	print("		<h1>plind.us</h1>\n");
 	print("	</header>\n");
 }
 
 
-// Page footer ------------------------------------
+// Page footer ---------------------------------------------------------------
 function Page_Footer(){
+	// Print page footer html
 	print("	<footer>\n");
+	printf("		<p class=\"align-left\">Last updated: <em>%s</em>.</p>\n",Get_LastModified());
+	print("		<p class=\"align-right\"><a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 Int'l License</a></p>\n");
 	print("	</footer>\n");
 }
 
 
-// Get current working directory -----------------
+// Get current working directory ---------------------------------------------
 function Get_CWD(){
+	// Get the current working directory
 	$cwd = explode("/", getcwd());
 	$cwd = $cwd[4];
 	
+	// Return the current working directory
 	return $cwd;
 }
 
 
-// Get environment -------------------------------
+// Get environment -----------------------------------------------------------
 function Get_Env(){
+	// Get the current environment from the url (dev. or test.)
 	$curUrl = $_SERVER['HTTP_HOST'];
 	$curEnv = explode(".", $curUrl);
-	$override = $_GET['runAs'];
 
+	// Get an override value if one is set
+	$override = $_GET['env'];
+
+	// Set to www if override exists on dev or test otherwise set to env
 	if($curEnv[0] == "dev" || $curEnv[0] == "test"){
-		if($override == "prod"){
-			$envProd = true;
+		if($override == "www"){
+			$reqEnv = "www";
 		} else {
-			$envProd = false;
+			$reqEnv = $curEnv[0];
 		}
 	} else {
-		$envProd = true;
+		$reqEnv = "www";
 	}
 	
-	return $envProd;
+	// Return the environment (dev | test | www)
+	return $reqEnv;
 }
 
 
-// Get fact -------------------------------------
+// Get last modified ---------------------------------------------------------
+function Get_LastModified(){
+	// Store the file name to check (the current page)
+	$fn = "../test" . $_SERVER['SCRIPT_NAME'];
+
+	// Check if that file exists and get the mod date
+	if(file_exists($fn)){
+		$modTime = date("F d Y H:i:s", filemtime($fn));
+	} else {
+		$modTime = "Not really sure";
+	}
+
+	// Return the modified date
+	return $modTime;
+}
+
+
+// Get fact ------------------------------------------------------------------
 function Get_Fact(){
+	// Add the fun facts to the array
 	$facts = array(
 		"the average cost of a car was $6,116.00",
 		"a Superbowl commercial cost $400,000",
@@ -113,17 +172,16 @@ function Get_Fact(){
 		"IBM released the PC XT with 128KB of RAM"
 	);
 	
+	// Return a random fact
 	return $facts[rand(0,10)];
 }
 
 
-// Output weather information from XML ----------
+// Get wx from xml -----------------------------------------------------------
 function Get_Wx(){
-	// Load config from ini file
-	$cfg = parse_ini_file("cfg-path.ini", true);
-
 	// Parse weather xml file
-	$wx = simplexml_load_file($cfg[weather][xmlpath]) or die("Error: Cannot retrieve the weather.");
+	$cfgPath = parse_ini_file("cfg-path.ini", true);
+	$wx = simplexml_load_file($cfgPath[weather][xmlpath]) or die("Error: Cannot retrieve the weather.");
 	$weather = $wx->weather;
 	$temp_f = $wx->temp_f;
 	

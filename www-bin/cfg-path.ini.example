@@ -1,2 +1,5 @@
+[host]
+basepath=/home/user/www/
+
 [weather]
 xmlpath=/path/to/weather.xml

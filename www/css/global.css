@@ -1,7 +1,7 @@
 /*
   File Name  global.css
   Project    plind.us
-  Version    8.1.5
+  Version    8.1.6
   Author     Peter Lindstrom
   Purpose    Global styles utilized throughout the site.
   Copyright  2003-2020, Peter Lindstrom
@@ -61,6 +61,15 @@ footer{
 	margin-top: 1rem;
 	padding-top: 1rem;
 	border-top: 1px solid #888;
+	font-size: 0.8rem;
+}
+
+footer p{
+	margin: 0;
+}
+
+footer p.align-left, footer p.align-right{
+	text-align: center;
 }
 
 h2{
@@ -110,6 +119,14 @@ p{
 }
 
 @media only screen and (min-width: 768px){
+	.align-left{
+		float: left;
+	}
+
+	.align-right{
+		float: right;
+	}
+
 	.satori{
 		float: right;
 		width: 200px;
