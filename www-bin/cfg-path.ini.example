@@ -2,4 +2,4 @@
 basepath=/home/user/www/
 
 [weather]
-xmlpath=/path/to/weather.xml
+xmlpath=/home/user/www/path/to/weather.xml
