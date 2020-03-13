@@ -40,6 +40,10 @@
 */
 
 
+// Load ini files ------------------------------------------------------------
+$iniPath = parse_ini_file("cfg-path.ini", true);
+
+
 // Start timer ---------------------------------------------------------------
 $mTime = microtime();
 $mTime = explode(" ",$mTime);
@@ -140,10 +144,9 @@ function Get_Env(){
 
 // Get last modified ---------------------------------------------------------
 function Get_LastModified(){
-	// Store the file name to check (the current page)
-	$fn = "../test" . $_SERVER['SCRIPT_NAME'];
-
 	// Check if that file exists and get the mod date
+	global $iniPath;
+	$fn = $iniPath[host][basepath] . Get_Env() . $_SERVER['SCRIPT_NAME'];
 	if(file_exists($fn)){
 		$modTime = date("F d Y H:i:s", filemtime($fn));
 	} else {
@@ -180,8 +183,8 @@ function Get_Fact(){
 // Get wx from xml -----------------------------------------------------------
 function Get_Wx(){
 	// Parse weather xml file
-	$cfgPath = parse_ini_file("cfg-path.ini", true);
-	$wx = simplexml_load_file($cfgPath[weather][xmlpath]) or die("Error: Cannot retrieve the weather.");
+	global $iniPath;
+	$wx = simplexml_load_file($iniPath[weather][xmlpath]) or die("Error: Cannot retrieve the weather.");
 	$weather = $wx->weather;
 	$temp_f = $wx->temp_f;
 	
