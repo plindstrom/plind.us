@@ -61,6 +61,7 @@ function Page_Init($pgTitle){
 	print("	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\" />\n");
 	print("	<title>Peter Lindstrom"); if(strlen($pgTitle) > 0){ print(" - $pgTitle"); } print("</title>\n");
 	print("	<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/global.css\" />\n");
+	print("	<link rel=\"icon\" type=\"image/png\" href=\"/favicon.ico\" sizes=\"16x16 32x32\" />\n");
 	print("	<script type=\"text/javascript\" src=\"/js/jquery-3.4.1.min.js\"></script>\n");
 	print("	<script type=\"text/javascript\" src=\"/js/global.js\"></script>\n");
 	print("	<script type=\"text/javascript\" src=\"/js/satori-1.0.1.js\"></script>\n");
