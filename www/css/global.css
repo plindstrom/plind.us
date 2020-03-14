@@ -80,6 +80,15 @@ p{
 	margin: 0 0 1.4rem 0;
 }
 
+a{
+	color: #00f;
+	transition: color 0.25s;
+}
+
+a:hover{
+	color: #c00;
+}
+
 .no-margin-bottom{
 	margin-bottom: 0;
 }
