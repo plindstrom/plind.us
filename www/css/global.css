@@ -1,7 +1,7 @@
 /*
   File Name  global.css
   Project    plind.us
-  Version    8.1.6
+  Version    8.2.0
   Author     Peter Lindstrom
   Purpose    Global styles utilized throughout the site.
   Copyright  2003-2020, Peter Lindstrom
@@ -17,6 +17,8 @@ html,body,header,footer,nav,main,section,article,aside,h1,h2,h3,h4,h5,h6,ol,ul,i
 
 html{
 	font-size: 100%;
+	background-color: var(--background-color);
+	color: var(--color);
 }
 
 header,nav,main,footer{ 
@@ -29,7 +31,7 @@ header{
 	margin-top: 2rem;
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
-	border-bottom: 1px solid #888;
+	border-bottom: 1px solid var(--border-color);
 	text-align: center;
 }
 
@@ -60,7 +62,7 @@ footer{
 	clear: both;
 	margin-top: 1rem;
 	padding-top: 1rem;
-	border-top: 1px solid #888;
+	border-top: 1px solid var(--border-color);
 	font-size: 0.8rem;
 }
 
@@ -81,12 +83,12 @@ p{
 }
 
 a{
-	color: #00f;
+	color: var(--link-color);
 	transition: color 0.25s;
 }
 
 a:hover{
-	color: #c00;
+	color: var(--link-hover);
 }
 
 .no-margin-bottom{

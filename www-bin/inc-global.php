@@ -60,6 +60,8 @@ function Page_Init($pgTitle){
 	print("	<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n");
 	print("	<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=1\" />\n");
 	print("	<title>Peter Lindstrom"); if(strlen($pgTitle) > 0){ print(" - $pgTitle"); } print("</title>\n");
+	print("	<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/dark.css\" media=\"(prefers-color-scheme: dark)\" />\n");
+	print("	<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/light.css\" media=\"(prefers-color-scheme: light)\" />\n");
 	print("	<link rel=\"stylesheet\" type=\"text/css\" href=\"/css/global.css\" />\n");
 	print("	<link rel=\"icon\" type=\"image/png\" href=\"/favicon.ico\" sizes=\"16x16 32x32\" />\n");
 	print("	<script type=\"text/javascript\" src=\"/js/jquery-3.4.1.min.js\"></script>\n");
@@ -102,7 +104,7 @@ function Page_Footer(){
 	// Print page footer html
 	print("	<footer>\n");
 	printf("		<p class=\"align-left\">Last updated: <em>%s</em>.</p>\n",Get_LastModified());
-	print("		<p class=\"align-right\"><a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 Int'l License</a></p>\n");
+	print("		<p class=\"align-right\"><a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 Int'l License</a><br /><a href=\"\" class=\"toggle-theme\">Toggle Dark Mode</a></p>\n");
 	print("	</footer>\n");
 }
 
