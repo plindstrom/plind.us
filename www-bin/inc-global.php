@@ -2,7 +2,7 @@
 /*
   File Name  inc-global.php
   Project    plind.us
-  Version    8.1.5
+  Version    8.1.6
   Author     Peter Lindstrom
   Purpose    Global PHP functions utilized throughout the site.
   Copyright  2003-2020, Peter Lindstrom
@@ -102,7 +102,7 @@ function Page_Footer(){
 	// Print page footer html
 	print("	<footer>\n");
 	printf("		<p class=\"align-left\">Last updated: <em>%s</em>.</p>\n",Get_LastModified());
-	print("		<p class=\"align-right\"><a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 Int'l License</a></p>\n");
+	print("		<p class=\"align-right\"><a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 Int'l License</a><br /><a href=\"\" class=\"toggle-theme\">Toggle Dark Mode</a></p>\n");
 	print("	</footer>\n");
 }
 
