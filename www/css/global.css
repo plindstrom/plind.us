@@ -8,6 +8,22 @@
   Link       https://github.com/plindstrom/plind.us
 */
 
+:root{
+    --color: #000;
+    --background-color: #fff;
+    --border-color: #888;
+    --link-color: #00f;
+    --link-hover: #c00;
+}
+
+[data-theme="dark"]{
+    --color: #a8a8a8;
+    --background-color: #222;
+    --border-color: #555;
+    --link-color: #9cdcfe;
+    --link-hover: #d7ba7d;
+}
+
 html,body,header,footer,nav,main,section,article,aside,h1,h2,h3,h4,h5,h6,ol,ul,img,p{
 	display: block;
 	margin: 0;
@@ -136,6 +152,14 @@ a:hover{
 
 	.align-right{
 		float: right;
+	}
+
+	footer p.align-left{
+		text-align: left;
+	}
+	
+	footer p.align-right{
+		text-align: right;
 	}
 
 	.satori{
