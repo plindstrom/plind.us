@@ -6,11 +6,11 @@ Page_Header(0);
 ?>
 	<main>
 		<div class="satori" id="satori"></div>
-		<p>Hello, my name is Peter and welcome to my personal web site.  When I&rsquo;m not busy at work I enjoy <a href="http://recipes.plind.us">cooking</a> (well, eating mostly), reading a good book, watching slightly too much TV and relaxing at home. Beyond this web site you can find me at the usual places like <a href="https://www.linkedin.com/in/pclindstrom">LinkedIn</a>.</p>
+		<p>Hello, my name is Peter and welcome to my personal web site.  When I&rsquo;m not busy at work I enjoy cooking (well, eating mostly), reading a good book, watching slightly too much TV and relaxing at home. Beyond this web site you can find me at the usual places like <a href="https://www.linkedin.com/in/pclindstrom">LinkedIn</a>.</p>
 		<p>How about some fun(ish) facts:</p>
 		<ul class="list-standard">
 			<li>I&rsquo;m currently reading <a href="https://www.goodreads.com/book/show/48720201-the-hunt-for-red-october"><em>The Hunt for Red October</em></a> by Tom Clancy</li>
-			<li>The <a href="/wx/">weather at home</a> is <?php echo Get_Wx(); ?></li>
+			<li>The weather at home is <?php echo Get_Wx(); ?></li>
 			<li>When I was born <?php echo Get_Fact(); ?></li>
 		</ul>
 	</main>
