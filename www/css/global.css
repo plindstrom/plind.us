@@ -1,10 +1,10 @@
 /*
   File Name  global.css
   Project    plind.us
-  Version    8.2.0
+  Version    8.2.1
   Author     Peter Lindstrom
   Purpose    Global styles utilized throughout the site.
-  Copyright  2003-2020, Peter Lindstrom
+  Copyright  2003-2021, Peter Lindstrom
   Link       https://github.com/plindstrom/plind.us
 */
 
@@ -18,7 +18,8 @@
 
 [data-theme="dark"]{
     --color: #a8a8a8;
-    --background-color: #222;
+    /*--background-color: #222;*/
+	--background-color: #fff;
     --border-color: #555;
     --link-color: #9cdcfe;
     --link-hover: #d7ba7d;
@@ -119,7 +120,19 @@ a:hover{
 	margin-left: 2rem;
 }
 
-.satori{
+.desk{
+	/*width: 1024px;
+	height: 520px;*/
+	margin: 0 auto;
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: none;
+	background: #fff url("../img/desk.jpg") no-repeat;*/
+}
+
+/*.satori{
 	width: 160px;
 	height: 160px;
 	margin: 0 auto 1.5rem auto;
@@ -131,7 +144,7 @@ a:hover{
 	width: 8px;
 	height: 8px;
 	transition: background-color 2s;	
-}
+}*/
 
 @media only screen and (min-width: 480px){
 	.satori{
