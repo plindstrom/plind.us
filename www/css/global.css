@@ -1,30 +1,39 @@
 /*
   File Name  global.css
   Project    plind.us
-  Version    8.2.1
+  Version    9.0.0
   Author     Peter Lindstrom
   Purpose    Global styles utilized throughout the site.
-  Copyright  2003-2021, Peter Lindstrom
+  Copyright  2003-2022, Peter Lindstrom
   Link       https://github.com/plindstrom/plind.us
 */
 
+
+/* Define style variables -------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif|Bebas+Neue");
+
 :root{
-    --color: #000;
-    --background-color: #fff;
-    --border-color: #888;
-    --link-color: #00f;
-    --link-hover: #c00;
+  --page-color: rgb(0,0,0);
+  --page-bg-color: rgb(207,207,207);
+  --box-bg-color: rgb(240,240,240);
+  --box-border-color: rgb(204,204,204);
+  --content-bg-color: rgb(255,255,255);
+  --content-shadow-color: rgb(170,170,170);
+  --link-color: rgb(0,20,40);
+  --link-hover: rgb(176,23,23);
+  --text-post-date: rgb(136,136,136);
 }
 
-[data-theme="dark"]{
-    --color: #a8a8a8;
-    /*--background-color: #222;*/
-	--background-color: #fff;
-    --border-color: #555;
-    --link-color: #9cdcfe;
-    --link-hover: #d7ba7d;
-}
+/*[data-theme="dark"]{
+  --color: #a8a8a8;
+  --background-color: #fff;
+  --border-color: #555;
+  --link-color: #9cdcfe;
+  --link-hover: #d7ba7d;
+}*/
 
+
+/* Set defaults ------------------------------------------------------------ */
 html,body,header,footer,nav,main,section,article,aside,h1,h2,h3,h4,h5,h6,ol,ul,img,p{
 	display: block;
 	margin: 0;
@@ -34,156 +43,139 @@ html,body,header,footer,nav,main,section,article,aside,h1,h2,h3,h4,h5,h6,ol,ul,i
 
 html{
 	font-size: 100%;
-	background-color: var(--background-color);
-	color: var(--color);
 }
 
-header,nav,main,footer{ 
-	width: 75%;
-	max-width: 1000px;
-	margin: 0 auto;
+body{
+  background-color: var(--page-bg-color);
+  font-family: 'IBM Plex Sans',sans-serif;
+  color: var(--page-color);
 }
 
 header{
-	margin-top: 2rem;
-	margin-bottom: 1rem;
-	padding-bottom: 1rem;
-	border-bottom: 1px solid var(--border-color);
-	text-align: center;
-}
-
-nav{
-	margin-top: 1rem;
-	margin-bottom: 1rem;
-	text-align: center;
-}
-
-nav ul{
-	list-style-type: none;
-}
-
-nav li{
-	display: inline;
-}
-
-nav a{
-	margin: 0 2rem;
+  padding: 2%;
+  background-color: var(--box-bg-color);
+  border-bottom: 0.2rem solid var(--box-border-color);
 }
 
 main{
-	margin-top: 1rem;
-	padding-top: 1rem;
+  padding: 2%;
+  background-color: var(--content-bg-color);
 }
 
 footer{
-	clear: both;
-	margin-top: 1rem;
-	padding-top: 1rem;
-	border-top: 1px solid var(--border-color);
-	font-size: 0.8rem;
+  padding: 2%;
+  background-color: var(--box-bg-color);
+  border-top: 0.2rem solid var(--box-border-color);
 }
 
-footer p{
-	margin: 0;
+h1,h2,h3,h4,h5,h6{
+  font-family: 'IBM Plex Serif',serif;
 }
 
-footer p.align-left, footer p.align-right{
-	text-align: center;
+h1{
+  font-family: 'Bebas Neue','IBM Plex Sans',sans-serif;
+  font-size: calc(1.8rem + 0.5vw);
+}
+
+h1 a{
+  text-decoration: none;
+}
+
+h1 a:hover{
+  text-decoration: underline;
 }
 
 h2{
-	margin: 0 0 1.4rem 0;
+  margin: 0 0 1rem 0;
+  font-size: calc(1.4rem + 0.5vw);
+  font-family: 'IBM Plex Sans',sans-serif;
+}
+
+h2 a{
+  color: var(--page-color);
+  text-decoration: none;
+}
+
+h2 a:hover{
+  text-decoration: underline;
+}
+
+h3{
+  margin: 1rem 0 0.5rem 0;
+  font-size: calc(1rem + 0.5vw);
+}
+
+p,li{
+  font-size: calc(1rem + 0.2vw);
 }
 
 p{
-	margin: 0 0 1.4rem 0;
+  margin: 0 0 1rem 0;
+}
+
+ul,ol{
+  margin: 0 0 1rem 0; padding: 0 0 0 2rem;
 }
 
 a{
-	color: var(--link-color);
-	transition: color 0.25s;
+  color: var(--link-color);
 }
 
 a:hover{
-	color: var(--link-hover);
+  color: var(--link-hover);
 }
 
-.no-margin-bottom{
-	margin-bottom: 0;
+
+/* Content formatting ------------------------------------------------------ */
+#page-wrapper{
+  /* Addtl styles in media only screen and min-width 768px */
+  border: 0.2rem solid var(--content-bg-color);
 }
 
-.list-standard{
-	margin: 0 0 1.4rem 0;
+#main-content{
+  /* Addtl styles in media only screen and min-width 768px */
 }
 
-.list-standard li{
-	margin-left: 2rem;
+#side-content{
+  /* Addtl styles in media only screen and min-width 768px */
+  padding: 2%;
+  background-color: var(--box-bg-color);
+  border: 0.2rem solid var(--content-bg-color);
+  box-shadow: -0.2rem 0.2rem 0 var(--box-border-color);
 }
 
-.desk{
-	/*width: 1024px;
-	height: 520px;*/
-	margin: 0 auto;
-	/*position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border: none;
-	background: #fff url("../img/desk.jpg") no-repeat;*/
+.post-summary{
+  margin: 0 0 5% 0;
 }
 
-/*.satori{
-	width: 160px;
-	height: 160px;
-	margin: 0 auto 1.5rem auto;
-	border: 1px solid #000;
+.post-date{
+  font-size: calc(0.8rem + 0.2vw);
+  color: var(--text-post-date);
 }
 
-.satori-box{
-	float: left;
-	width: 8px;
-	height: 8px;
-	transition: background-color 2s;	
-}*/
+.clear-float{
+  clear: both;
+}
 
+
+/* Conditional formatting -------------------------------------------------- */
 @media only screen and (min-width: 480px){
-	.satori{
-		width: 180px;
-		height: 180px;
-	}
-
-	.satori-box{
-		width: 9px;
-		height: 9px;
-	}
 }
 
 @media only screen and (min-width: 768px){
-	.align-left{
-		float: left;
+	#page-wrapper{
+    width: 75%;
+    margin: 2% auto 0 auto;
+    box-shadow: 0 0 0.8rem var(--content-shadow-color);
 	}
 
-	.align-right{
-		float: right;
-	}
+  #main-content{
+    float: left;
+    width: 70%;
+  }
 
-	footer p.align-left{
-		text-align: left;
-	}
-	
-	footer p.align-right{
-		text-align: right;
-	}
-
-	.satori{
-		float: right;
-		width: 200px;
-		height: 200px;
-		margin: 0.2rem 0 1.5rem 1.5rem;
-	}
-
-	.satori-box{
-		width: 10px;
-		height: 10px;
-	}
+  #side-content{
+    float: right;
+    width: 20%;
+  }
 }

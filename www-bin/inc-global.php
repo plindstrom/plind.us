@@ -2,10 +2,10 @@
 /*
   File Name  inc-global.php
   Project    plind.us
-  Version    8.1.8
+  Version    9.0.0
   Author     Peter Lindstrom
   Purpose    Global PHP functions utilized throughout the site.
-  Copyright  2003-2021, Peter Lindstrom
+  Copyright  2003-2022, Peter Lindstrom
   Link       https://github.com/plindstrom/plind.us
 
   FUNCTIONS ------------------------------------------------------------------
@@ -13,7 +13,7 @@
        Prints html required to start the page (html, head, body).
 
     2. Page_End
-       Stops page gen timer and prints html required to end the page 
+       Stops page gen timer and prints html required to end the page
        (/body, /html).
 
     3. Page_Header
@@ -58,23 +58,24 @@ function Page_Init($pgTitle){
 	print("	<link rel=\"icon\" type=\"image/png\" href=\"/favicon.ico\" sizes=\"16x16 32x32\" />\n");
 	print("	<script type=\"text/javascript\" src=\"/js/jquery-3.4.1.min.js\"></script>\n");
 	print("	<script type=\"text/javascript\" src=\"/js/global.js\"></script>\n");
-	print("	<script type=\"text/javascript\" src=\"/js/fish-1.0.0.js\"></script>\n");
 	print("</head>\n");
 	print("<body>\n");
+	print("	<div id=\"page-wrapper\">\n");
 }
 
 
 // Page ending ---------------------------------------------------------------
 function Page_End(){
 	// Stop the timer and get page generation time
-    global $tStart;
+  global $tStart;
 	$mTime = microtime();
-    $mTime = explode(" ",$mTime);
-    $mTime = $mTime[1] + $mTime[0];
-    $tEnd = $mTime;
-    $ttlTime = ($tEnd - $tStart);
+  $mTime = explode(" ",$mTime);
+  $mTime = $mTime[1] + $mTime[0];
+  $tEnd = $mTime;
+  $ttlTime = ($tEnd - $tStart);
 
-    // Print page end html
+  // Print page end html
+	print("	</div>\n");
 	print("</body>\n");
 	print("</html>\n");
 	print("<!-- (c) Copyright 2003-" . date("Y") . ". -->\n");
@@ -85,19 +86,18 @@ function Page_End(){
 // Page header ---------------------------------------------------------------
 function Page_Header(){
 	// Print page header html
-	print("	<header>\n");
-	print("		<h1>plind.us</h1>\n");
-	print("	</header>\n");
+	print("		<header>\n");
+	print("			<h1><a href=\"/\">plind.us</a></h1>\n");
+	print("		</header>\n");
 }
 
 
 // Page footer ---------------------------------------------------------------
 function Page_Footer(){
 	// Print page footer html
-	print("	<footer>\n");
-	printf("		<p class=\"align-left\">Last updated: <em>%s</em>.</p>\n",Get_LastModified());
-	print("		<p class=\"align-right\"><a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 Int'l License</a><br /><a href=\"\" class=\"toggle-theme\">Toggle Dark Mode</a></p>\n");
-	print("	</footer>\n");
+	print("		<footer>\n");
+	printf("			<p>Last updated: <em>%s</em>.<br /><a href=\"http://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 Int'l License</a>\n",Get_LastModified());
+	print("		</footer>\n");
 }
 
 
@@ -106,7 +106,7 @@ function Get_CWD(){
 	// Get the current working directory
 	$cwd = explode("/", getcwd());
 	$cwd = $cwd[4];
-	
+
 	// Return the current working directory
 	return $cwd;
 }
@@ -131,7 +131,7 @@ function Get_Env(){
 	} else {
 		$reqEnv = "www";
 	}
-	
+
 	// Return the environment (dev | test | www)
 	return $reqEnv;
 }
