@@ -1,5 +1,0 @@
-[host]
-basepath=/home/user/www/
-
-[weather]
-xmlpath=/home/user/www/path/to/weather.xml

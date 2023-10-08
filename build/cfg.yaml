@@ -1,0 +1,9 @@
+---
+
+# plind.us Site Builder Configuration
+site_name: plind.us
+site_url: https://www.plind.us
+site_language: en
+license_type: Creative Commons Attribution 4.0 Int'l License
+license_url: http://creativecommons.org/licenses/by/4.0/
+copyright: "2003-2023"
