@@ -1,0 +1,112 @@
+/*
+Theme Name: Notes From Alaska
+Theme URI: http://www.notesfromalaska.com
+Description: This is a custom theme for John's NotesFromAlaska.com web site
+Version: 1.0
+Author: Peter Lindstrom
+Tags: simple, fixed width, two columns
+*/
+
+/* === IMPORT FONTS === */
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/* === GLOBAL SETTINGS === */
+html,body,h1,h2,h3,h4,h5,h6,ol,ul,img,p{ margin: 0; padding: 0; border: none; }
+body{ font: normal 78% Arial, Helvetica, sans-serif; background: #f0f0f0 url(BgPage.png) repeat fixed; }
+br{ clear: both; }
+a{ color: #369; }
+a:hover{ color: #036; }
+.wrap{ width: 900px; margin: 25px auto; border: 1px solid #ccc; background-color: #fff; }
+.alignleft{ float: left; margin: 0 25px 15px 0; }
+.alignright{ float: right; margin: 0 0 15px 25px; }
+.aligncenter{ display: block; margin: 0 auto 15px auto; }
+.alignleft-nomarg{ float: left; }
+.alignright-nomarg{ float: right; }
+
+/* === HEADER === */
+.head{ height: 200px; background: transparent url(image-e1398024508313.jpg) no-repeat; }
+.head h1{ padding: 50px 0 0 40px; font: 700 3em "Noto Sans"; text-shadow: 2px 2px 1px #fff; }
+.head h1 a{ color: #222; text-decoration: none; }
+
+/* === NAVBAR === */
+.nav{ width: 900px; height: 50px; border-top: 1px solid #333; border-bottom: 1px solid #111; background: transparent url(BgNav.jpg) no-repeat; }
+.nav ul{ list-style-type: none; }
+.nav li{ float: left; }
+.nav li a{ display: block; height: 35px; padding: 15px 25px 0 25px; background: transparent url(BgNavLink.png) no-repeat right center; font: 400 1.2em "Noto Sans"; text-transform: uppercase; text-decoration: none; color: #fff; }
+.nav li a:hover{ text-decoration: underline; }
+
+/* === ARTICLE CONTENT === */
+.article{ width: 800px; padding: 25px 50px; background: transparent; }
+.article p, .article blockquote, .article label, .article li{ font: 400 1.4em "Source Sans Pro"; line-height: 1.2em; color: #333; }
+.article p{ margin: 0 0 25px 0; }
+.article ol, .article ul{ margin: 0 0 25px 25px; }
+.article blockquote p{ font-size: 1em; }
+.article h1{ margin: 25px 0 15px 0; font: 400 2.4em "Noto Sans"; color: #222; }
+.article h2{ margin: 0 0 15px 0; font: 400 2em sans-serif; }
+.article h3{ margin: 25px 0 15px 0; font: 700 1.6em sans-serif; color: #444; }
+.article h4{ margin: 25px 0 15px 0; font: 700 1.4em sans-serif; color: #369; }
+.article h5{ margin: 25px 0 0 0; font: 700 1.4em sans-serif; color: #444; }
+.article h6{ margin: 0 0 15px 0; font: 700 1.4em "Source Sans Pro"; color: #444; }
+.article h1.title{ margin: 0 0 10px 0; font: 700 3em "Noto Sans"; }
+.article h1.title a{ color: #111; text-decoration: none; }
+.article h1.title a:hover{ color: #369; }
+
+/* === VIEW COMMENTS === */
+.comments{ width: 800px; margin: 25px auto; padding: 25px 50px; border-top: 1px solid #a3a3a3; background: transparent url(BgFoot.png) repeat-x; }
+.comments p, .comments label, .comments li{ font: 400 1.4em "Source Sans Pro"; line-height: 1.2em; color: #333; }
+.comments p{ margin: 0 0 15px 0; }
+.comments h3#reply-title{ margin: 25px 0 15px 0; font: 400 2em "Noto Sans"; color: #222; }
+.comments ol, .comments ul{ margin: 0 0 15px 25px; }
+.comments ol{ margin-left: 0; list-style-type: none; }
+.comments ul.children{ list-style-type: none; margin-right: 15px; }
+.comments li{ margin: 0 0 15px 0; border: 1px solid #e3e3e3; font-size: 1em; }
+.comments .comment-author{ height: 45px; padding: 15px 25px 0 15px; background: #efefef; border-bottom: 1px solid #e3e3e3; font: 700 1.4em "Noto Sans"; }
+.comments .comment-meta{ padding: 5px 0 5px 20px; background: #e8e8e8; border-bottom: 1px solid #e3e3e3; font-size: 1.1em; }
+.comments .comment-meta a{ text-decoration: none; }
+.comments .comment-meta a:hover{ text-decoration: underline; }
+.comments .avatar{ float: left; margin: 0 25px 0 0; }
+.comments p{ margin: 20px; }
+.comments .reply{ margin: 20px; font-size: 1.1em; }
+.comments .reply a.comment-reply-link{ padding: 2px 0 2px 19px; background: transparent url(IcoReply.png) no-repeat left center; text-decoration: none; }
+.comments .reply a.comment-reply-link:hover{ text-decoration: underline; }
+
+/* === POST COMMENT === */
+.post-comment{ width: 800px; margin: 25px auto; padding: 25px 50px; border-top: 1px solid #a3a3a3; background: transparent url(BgFoot.png) repeat-x; }
+.post-comment p, .post-comment label, .post-comment li{ font: 400 1.4em "Source Sans Pro"; line-height: 1.2em; color: #333; }
+.post-comment p{ margin: 0 0 15px 0; }
+.post-comment ol, .post-comment ul{ margin: 0 0 15px 25px; }
+.post-comment h3#reply-title{ margin: 25px 0 15px 0; font: 400 2em "Noto Sans"; color: #222; }
+.post-comment h3#reply-title a{ color: #222; text-decoration: none; }
+.post-comment h3#reply-title a:hover{ color: #369; text-decoration: underline; }
+.post-comment h3#reply-title #cancel-comment-reply-link{ font-size: 0.6em; color: #369; text-decoration: none; }
+.post-comment h3#reply-title #cancel-comment-reply-link:hover{ color: #036; text-decoration: underline; }
+.post-comment p label{ float: left; width: 100px; font-size: 1em; }
+.post-comment input#submit{ margin-left: 100px; }
+.post-comment p.comment-form-url{ display: none; }
+.post-comment p.post-date{ margin: 0 0 25px 0; padding: 0 0 25px 0; font-size: 1.2em; border-bottom: 1px dotted #ccc; }
+.post-comment label.subscribe-label{ width: 300px; font-size: 0.9em; }
+
+/* === HOME PAGE === */
+.rundown-item{ margin: 0 0 45px 0; padding: 0 0 45px 0; border-bottom: 1px solid #ccc; }
+.rundown-item h1, .rundown-item h2, .rundown-item h3, .rundown-item h4, .rundown-item h5, .rundown-item h6{ margin: 0 0 15px 15px; font: 700 1.5em sans-serif; color: #111; }
+.rundown-item p{ margin: 0 0 15px 15px; }
+.rundown-item a.continue{ color: #369; text-decoration: none; }
+.rundown-item a.continue:hover{ color: #333; text-decoration: underline; }
+h1.rundown-title{ margin: 0 0 10px 0; font: 700 2.3em "Noto Sans"; }
+h1.rundown-title a{ color: #111; text-decoration: none; }
+h1.rundown-title a:hover{ color: #369; }
+p.rundown-date{ margin-left: 0; font-size: 1em; color: #444; }
+p.rundown-comments{ margin: 35px 0 0 15px; padding: 2px 0 2px 19px; font-size: 1em; background: transparent url(IcoComment.png) no-repeat left center; color: #444; }
+p.rundown-comments a{ color: #369; text-decoration: none; }
+p.rundown-comments a:hover{ text-decoration: underline; }
+
+/* === FOOTER === */
+.foot{ clear: both; width: 850px; margin: 25px auto; padding: 25px; border-top: 1px solid #a3a3a3; font-size: 1em; background: transparent url(BgFoot.png) repeat-x; }
+.foot h3{ margin: 0 0 15px 0; font: 400 1.5em "Noto Sans"; }
+.foot h3 a{ color: #222; text-decoration: none; }
+.foot h3 a:hover{ color: #369; text-decoration: underline; }
+.foot ul{ list-style-type: none; }
+.foot li{ margin: 0 0 5px 15px; }
+.foot li a{ font: 400 1.2em "Source Sans Pro"; text-decoration: none; color: #444; }
+.foot li a:hover{ color: #369; text-decoration: underline; }
