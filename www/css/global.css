@@ -1,10 +1,8 @@
 /*
   File Name  global.css
   Project    plind.us
-  Version    9.0.0
-  Author     Peter Lindstrom
+  Version    9.0.1
   Purpose    Global styles utilized throughout the site.
-  Copyright  2003-2023, Peter Lindstrom
   Link       https://github.com/plindstrom/plind.us
 */
 
@@ -179,7 +177,6 @@ nav div.nav-path a:hover{
 }
 
 
-
 /* Page content ------------------------------------------------------------ */
 main{
   padding: 2rem;
@@ -187,113 +184,112 @@ main{
   border: 0.2rem solid var(--grey-medium-light);
 }
 
-.a1,.f1,.a2,.f2,.a3,.f3,.a4,.f4,.a5,.f5,.a6,.f6,.a7,.f7,.a8,.f8{
-  width: 100%;
+
+/* Abstract Stuff... Color Waves! ------------------------------------------ */
+#waves{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.waves-column{
+  flex: 10%;
+  color: var(--grey-medium-dark);
+}
+
+.column-a,.column-b,.column-c,.column-d,.column-e,.column-f{
   height: 2rem;
-  background-color: var(--purple-medium);
-  animation-name: waves-a;
+  background-color: var(--grey-medium-dark);
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 
-.b1,.b2,.b3,.b4,.b5,.b6,.b7,.b8{
-  width: 100%;
-  height: 2rem;
-  background-color: var(--cyan-medium);
-  animation-name: waves-b;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+.column-a{
+  animation-name: animation-a;
 }
 
-.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8{
-  width: 100%;
-  height: 2rem;
-  background-color: var(--orange-medium);
-  animation-name: waves-c;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+.column-b{
+  animation-name: animation-b;
 }
 
-.d1,.d2,.d3,.d4,.d5,.d6,.d7,.d8{
-  width: 100%;
-  height: 2rem;
-  background-color: var(--red-medium);
-  animation-name: waves-d;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+.column-c{
+  animation-name: animation-c;
 }
 
-.e1,.e2,.e3,.e4,.e5,.e6,.e7,.e8{
-  width: 100%;
-  height: 2rem;
-  background-color: var(--blue-medium);
-  animation-name: waves-e;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+.column-d{
+  animation-name: animation-d;
 }
 
-.a2,.b2,.c2,.d2,.e2,.f2{
+.column-e{
+  animation-name: animation-e;
+}
+
+.column-f{
+  animation-name: animation-f;
+}
+
+.row-2{
   animation-delay: 0.25s;
 }
 
-.a3,.b3,.c3,.d3,.e3,.f3{
+.row-3{
   animation-delay: 0.5s;
 }
 
-.a4,.b4,.c4,.d4,.e4,.f4{
+.row-4{
   animation-delay: 0.75s;
 }
 
-.a5,.b5,.c5,.d5,.e5,.f5{
+.row-5{
   animation-delay: 1s;
 }
 
-.a6,.b6,.c6,.d6,.e6,.f6{
+.row-6{
   animation-delay: 1.25s;
 }
 
-.a7,.b7,.c7,.d7,.e7,.f7{
+.row-7{
   animation-delay: 1.5s;
 }
 
-.a8,.b8,.c8,.d8,.e8,.f8{
+.row-8{
   animation-delay: 1.75s;
 }
 
-@keyframes waves-a{
-  0% {background-color: var(--purple-medium); color: var(--grey-medium-dark);}
-  50% {background-color: var(--cyan-medium); color: var(--grey-medium-dark);}
-  100% {background-color: var(--purple-medium); color: var(--grey-medium-dark);}
+@keyframes animation-a{
+  0% { background-color: var(--purple-medium); }
+  50% { background-color: var(--cyan-medium); }
+  100% { background-color: var(--purple-medium); }
 }
 
-@keyframes waves-b{
-  0% {background-color: var(--cyan-medium); color: var(--grey-medium-dark);}
-  50% {background-color: var(--orange-medium); color: var(--grey-medium-dark);}
-  100% {background-color: var(--cyan-medium); color: var(--grey-medium-dark);}
+@keyframes animation-b{
+  0% { background-color: var(--cyan-medium); }
+  50% { background-color: var(--orange-medium); }
+  100% { background-color: var(--cyan-medium); }
 }
 
-@keyframes waves-c{
-  0% {background-color: var(--orange-medium); color: var(--grey-medium-dark);}
-  50% {background-color: var(--green-medium); color: var(--grey-medium-dark);}
-  100% {background-color: var(--orange-medium); color: var(--grey-medium-dark);}
+@keyframes animation-c{
+  0% { background-color: var(--orange-medium); }
+  50% { background-color: var(--green-medium); }
+  100% { background-color: var(--orange-medium); }
 }
 
-@keyframes waves-d{
-  0% {background-color: var(--green-medium); color: var(--grey-medium-dark);}
-  50% {background-color: var(--red-medium); color: var(--grey-medium-dark);}
-  100% {background-color: var(--green-medium); color: var(--grey-medium-dark);}
+@keyframes animation-d{
+  0% { background-color: var(--green-medium); }
+  50% { background-color: var(--red-medium); }
+  100% { background-color: var(--green-medium); }
 }
 
-@keyframes waves-e{
-  0% {background-color: var(--red-medium); color: var(--grey-medium-dark);}
-  50% {background-color: var(--blue-medium); color: var(--grey-medium-dark);}
-  100% {background-color: var(--red-medium); color: var(--grey-medium-dark);}
+@keyframes animation-e{
+  0% { background-color: var(--red-medium); }
+  50% { background-color: var(--blue-medium); }
+  100% { background-color: var(--red-medium); }
 }
 
-@keyframes waves-f{
-  0% {background-color: var(--blue-medium); color: var(--grey-medium-dark);}
-  50% {background-color: var(--purple-medium); color: var(--grey-medium-dark);}
-  100% {background-color: var(--blue-medium); color: var(--grey-medium-dark);}
+@keyframes animation-f{
+  0% { background-color: var(--blue-medium); }
+  50% { background-color: var(--purple-medium); }
+  100% { background-color: var(--blue-medium); }
 }
 
 
