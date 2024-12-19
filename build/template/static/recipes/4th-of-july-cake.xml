@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="dessert">
+  <name>4th of July Cake</name>
+  <servings>18</servings>
+  <difficulty>Moderate</difficulty>
+  <time>45 Minutes (15 min prep, 30 min baking)</time>
+  <ingredients>
+    <ingredient>
+      <amount>3 oz</amount>
+      <description>sugar free vanilla pudding mix</description>
+    </ingredient>
+    <ingredient>
+      <amount>6 cups</amount>
+      <description>skim milk (see pudding mix for exact measurement)</description>
+    </ingredient>
+    <ingredient>
+      <amount>2 boxes</amount>
+      <description>Betty Crocker Super Moist yellow cake mix</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 cup</amount>
+      <description>applesauce (see cake mix for exact measurement and use in place of oil)</description>
+    </ingredient>
+    <ingredient>
+      <amount>6</amount>
+      <description>eggs (see cake mix for exact measurement)</description>
+    </ingredient>
+    <ingredient>
+      <amount>8 oz</amount>
+      <description>whipped topping</description>
+    </ingredient>
+    <ingredient>
+      <amount></amount>
+      <description>Blueberries for flag</description>
+    </ingredient>
+    <ingredient>
+      <amount></amount>
+      <description>Strawberries for flag</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Make the vanilla pudding and place in the fridge to firm up.</description>
+    </step>
+    <step number="2">
+      <description>Mix the cake and place in a rectangular pan.  Bake according to the instructions.</description>
+    </step>
+    <step number="3">
+      <description>When the cake is cool, remove from the baking pans and spread the pudding over the top of one cake.  Carefully place the other cake on top, and then cover the top and sides with whipped topping.  Use the blueberries and strawberries to make the flag's stars and stripes.</description>
+    </step>
+    <step number="4">
+      <description>To store you can place toothpicks in the cake and then gently cover with plastic wrap.  The toothpicks will keep the plastic wrap from touching the whipped topping.</description>
+    </step>
+  </directions>
+</recipe>

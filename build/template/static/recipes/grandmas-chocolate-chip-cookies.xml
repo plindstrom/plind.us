@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="dessert">
+  <name>Grandma's Chocolate Chip Cookies</name>
+  <servings>12</servings>
+  <difficulty>Easy</difficulty>
+  <time>25 Minutes (10 min prep, 15 min baking)</time>
+  <ingredients>
+    <ingredient>
+      <amount>1 cup</amount>
+      <description>shortening</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/2 cup</amount>
+      <description>granulated sugar</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 cup</amount>
+      <description>light brown sugar</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 tsp</amount>
+      <description>vanilla extract</description>
+    </ingredient>
+    <ingredient>
+      <amount>2</amount>
+      <description>eggs</description>
+    </ingredient>
+    <ingredient>
+      <amount>2 1/4 cups</amount>
+      <description>flour</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 tsp</amount>
+      <description>baking soda</description>
+    </ingredient>
+    <ingredient>
+      <amount>6 oz</amount>
+      <description>chocolate chips</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Preheat the oven to 350 degrees fahrenheit.</description>
+    </step>
+    <step number="2">
+      <description>Add all ingredients to a large bowl and mix until just combined.</description>
+    </step>
+    <step number="3">
+      <description>Form cookie dough into 1 inch diameter balls. Place on a lightly greased cookie sheet, spaced evenly.</description>
+    </step>
+    <step number="4">
+      <description>Bake for 10 to 12 minutes or until the edges are lightly golden brown. Allow to cool for several minutes after removing from the oven.</description>
+    </step>
+  </directions>
+</recipe>

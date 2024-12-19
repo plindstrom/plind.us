@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="entree">
+  <name>Pizza Dough</name>
+  <servings>4</servings>
+  <difficulty>Easy</difficulty>
+  <time>1 Hour 30 Minutes (15 min prep, 15 min cooking, 1 hr resting)</time>
+  <summary>This versital pizza dough is great for traditional pizza cooked on a hot stone, calzones or even pizza roll-ups.  It's also great to make ahead and keep in the referigerator until you're ready to use (just allow it to come back to room temperature first).</summary>
+  <nutrition>
+    <calories>
+      <unit>kcal</unit>
+      <value>123</value>
+    </calories>
+    <fat>
+      <unit>g</unit>
+      <value>123</value>
+    </fat>
+    <saturated_fat>
+      <unit>g</unit>
+      <value>123</value>
+    </saturated_fat>
+  </nutrition>
+  <ingredients>
+    <ingredient>
+      <amount>3/4 cup</amount>
+      <description>warm water (105F to 115F)</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 envelope</amount>
+      <description>active dry yeast</description>
+    </ingredient>
+    <ingredient>
+      <amount>2 cups</amount>
+      <description>all purpose flour</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 tsp</amount>
+      <description>sugar</description>
+    </ingredient>
+    <ingredient>
+      <amount>3/4 tsp</amount>
+      <description>salt</description>
+    </ingredient>
+    <ingredient>
+      <amount>3 tbsp</amount>
+      <description>olive oil</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Pour warm water (3/4 cup) into a small bowl and stir in the yeast.  Let stand until the yeast dissolves, about five minutes.</description>
+    </step>
+    <step number="2">
+      <description>While the yeast dissolves, mix flour (2 cups), sugar (1 tsp) and salt (3/4 tsp) in a large bowl.  Add the yeast mixture and olive oil (3 tbsp) when the yeast has dissolved.</description>
+    </step>
+    <step number="3">
+      <description>Mix until the dough has formed a sticky ball, then knead the dough until smooth, about one minute.  Add more flour if the dough is too sticky.</description>
+    </step>
+    <step number="4">
+      <description>Add a drizzle of olive oil around the bowl and turn the dough in the oil to coat.  Cover the bowl with plastic wrap and let the dough rise in a warm area until doubled in size, about one hour.  Punch the dough down when it has doubled in size.</description>
+    </step>
+    <step number="5">
+      <description>If making pizza, roll the dough out on a lightly floured surface to the desired thickness.  We generally bake the pizza at 425°F for about 10-15 minutes, but the preparation will vary depending on what you are making.</description>
+    </step>
+  </directions>
+  <source>
+    <publication>Epicurious</publication>
+    <title>Pizza Dough</title>
+    <url>https://www.epicurious.com/recipes/food/views/pizza-dough-237338</url>
+    <date_accessed>7 Oct 2023</date_accessed>
+  </source>
+</recipe>
