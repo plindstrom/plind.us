@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="appetizer">
+  <name>Sausage Balls</name>
+  <servings>20</servings>
+  <difficulty>Easy</difficulty>
+  <time>35 Mins (10 min prep, 25 min cooking)</time>
+  <ingredients>
+    <ingredient>
+      <amount>1 lbs</amount>
+      <description>ground pork sausage</description>
+    </ingredient>
+    <ingredient>
+      <amount>2 cups</amount>
+      <description>Bisquick</description>
+    </ingredient>
+    <ingredient>
+      <amount>4 cups</amount>
+      <description>shredded cheddar cheese</description>
+    </ingredient>
+    <ingredient>
+      <amount>2 tbsp</amount>
+      <description>fresh parsley, chopped</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 tbsp</amount>
+      <description>paprika</description>
+    </ingredient>
+    <ingredient>
+      <amount>2 tbsp</amount>
+      <description>olive oil</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Preheat the oven to 350 degrees fahrenheit and line a baking sheet with parchment paper.</description>
+    </step>
+    <step number="2">
+      <description>In a large bowl, mix together the pork sausage (1 lbs), Bisquick (2 cups), cheddar cheese (4 cups), parsley (2 tbsp) and paprika (1 tbsp) until combined.  Season with salt and pepper.</description>
+    </step>
+    <step number="3">
+      <description>Using a small cookie scoop, place tablespoon-sized balls of mixture onto the prepared baking sheet.</description>
+    </step>
+    <step number="4">
+      <description>Brush the tops with olive oil and bake until golden and the center is no longer pink, about 25 minutes.</description>
+    </step>
+    <step number="5">
+      <description>Garnish with any extra parsley before serving.</description>
+    </step>
+  </directions>
+  <source>
+    <publication>delish</publication>
+    <title>Sausage Balls Recipe - How to Make Sausage Balls</title>
+    <url>https://www.delish.com/cooking/recipe-ideas/recipes/a54969/sausage-balls-recipe/</url>
+    <date_accessed>1 Oct 2020</date_accessed>
+  </source>
+</recipe>

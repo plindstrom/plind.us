@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="appetizer">
+  <name>Lime Drop Martini</name>
+  <servings>1</servings>
+  <difficulty>Easy</difficulty>
+  <time>5 Mins</time>
+  <ingredients>
+    <ingredient>
+      <amount>2 oz</amount>
+      <description>vodka</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 oz</amount>
+      <description>triple sec</description>
+    </ingredient>
+    <ingredient>
+      <amount>1.5 tsp</amount>
+      <description>simple syrup</description>
+    </ingredient>
+    <ingredient>
+      <amount>1.5 oz</amount>
+      <description>fresh lime juice</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/2 tsp</amount>
+      <description>granulated sugar</description>
+    </ingredient>
+    <ingredient>
+      <amount>Dash</amount>
+      <description>lime zest</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Combine the granulated sugar (1/2 tsp) and lime zest on a plate.  Lightly rim your cocktail glasses with the juice of a lime slice and dip in the sugar mixture to coat.</description>
+    </step>
+    <step number="2">
+      <description>Add the vodka (2 oz), triple sec (1 oz), simple syrup (1.5 tsp) and lime juice (1.5 oz) to a cocktail shaker filled with ice.  Shake vigorously for about 15 seconds.</description>
+    </step>
+    <step number="3">
+      <description>Strain mixture into a glass and garnish with some lime.</description>
+    </step>
+  </directions>
+</recipe>

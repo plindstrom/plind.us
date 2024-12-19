@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="appetizer">
+  <name>Skinny Casper</name>
+  <servings>1</servings>
+  <difficulty>Easy</difficulty>
+  <time>5 Mins</time>
+  <ingredients>
+    <ingredient>
+      <amount>1.5 oz</amount>
+      <description>citron vodka</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/2 oz</amount>
+      <description>St Germain</description>
+    </ingredient>
+    <ingredient>
+      <amount>1</amount>
+      <description>lime</description>
+    </ingredient>
+    <ingredient>
+      <amount>Splash</amount>
+      <description>simple syrup</description>
+    </ingredient>
+    <ingredient>
+      <description>Sparkling water</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Add the citron vodka (1.5 oz), St Germain (1/2 oz), lime juice (1 lime) and simple syrup (splash) to a cocktail shaker and shake vigorously for about 15 seconds.</description>
+    </step>
+    <step number="2">
+      <description>Pour into a glass and top with sparkling water (or sprite if you don’t want it skinny).</description>
+    </step>
+  </directions>
+</recipe>

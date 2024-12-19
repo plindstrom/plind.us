@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="appetizer">
+  <name>Watermelon Martini</name>
+  <servings>1</servings>
+  <difficulty>Moderate</difficulty>
+  <time>5 Mins</time>
+  <ingredients>
+    <ingredient>
+      <amount>1 cup</amount>
+      <description>watermelon, roughly diced</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/8 cup</amount>
+      <description>sugar, granulated</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/4 cup</amount>
+      <description>water</description>
+    </ingredient>
+    <ingredient>
+      <amount>2 oz</amount>
+      <description>vodka</description>
+    </ingredient>
+    <ingredient>
+      <amount>1</amount>
+      <description>lime</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Add sugar (1/8 cup) and water (1/4 cup) to a small pan over medium heat and stir until dissolved.  We prefer drinks that aren't too sweet, but if you want a sweeter drink use equal parts water and sugar to make simple syrup.</description>
+    </step>
+    <step number="2">
+      <description>Optionally, combine 75% granulated sugar and 25% salt on a plate.  Rim your cocktail glasses with lime and then place in the sugar mixture to coat.</description>
+    </step>
+    <step number="2">
+      <description>Muddle the watermelon (1 cup) in a cocktail shaker.  Add the vodka (2 oz), sugar water, juice from the lime (reserving some lime for garnish) and ice.  Give it a vigerous shake for about 15 seconds.</description>
+    </step>
+    <step number="2">
+      <description>Strain the watermelon cocktail into a glass and garnish with some lime.</description>
+    </step>
+  </directions>
+</recipe>

@@ -1,10 +1,10 @@
 /*
   File Name  global.css
   Project    plind.us
-  Version    9.0.0
+  Version    9.1.0
   Author     Peter Lindstrom
   Purpose    Global styles utilized throughout the site.
-  Copyright  2003-2023, Peter Lindstrom
+  Copyright  2003-2024, Peter Lindstrom
   Link       https://github.com/plindstrom/plind.us
 */
 
@@ -98,10 +98,17 @@ p:last-child{
   margin: 0 1rem;
 }
 
-ul,ol{
-  margin: 0 1rem 2rem 2rem;
+ol,ul{
   font-size: calc(1rem + 0.3vw);
-  list-style-position: inside;
+  list-style-position: outside;
+}
+
+ol{
+  margin: 0 1rem 2rem 3.5rem;
+}
+
+ul{
+  margin: 0 1rem 2rem 2.5rem;
   list-style-type: square;
 }
 
@@ -174,17 +181,124 @@ nav div.nav-path a{
   text-decoration: none;
 }
 
-nav div.nav-path a:hover{
-  text-decoration: underline;
-}
-
-
 
 /* Page content ------------------------------------------------------------ */
 main{
   padding: 2rem;
   background-color: var(--grey-medium-dark);
   border: 0.2rem solid var(--grey-medium-light);
+}
+
+ul.recipe-info{
+  list-style-type: none;
+}
+
+
+/* Abstract Stuff... Color Waves! ------------------------------------------ */
+#waves{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.waves-column{
+  flex: 10%;
+  color: var(--grey-medium-dark);
+}
+
+.column-a,.column-b,.column-c,.column-d,.column-e,.column-f{
+  height: 2rem;
+  background-color: var(--grey-medium-dark);
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.column-a{
+  animation-name: animation-a;
+}
+
+.column-b{
+  animation-name: animation-b;
+}
+
+.column-c{
+  animation-name: animation-c;
+}
+
+.column-d{
+  animation-name: animation-d;
+}
+
+.column-e{
+  animation-name: animation-e;
+}
+
+.column-f{
+  animation-name: animation-f;
+}
+
+.row-2{
+  animation-delay: 0.25s;
+}
+
+.row-3{
+  animation-delay: 0.5s;
+}
+
+.row-4{
+  animation-delay: 0.75s;
+}
+
+.row-5{
+  animation-delay: 1s;
+}
+
+.row-6{
+  animation-delay: 1.25s;
+}
+
+.row-7{
+  animation-delay: 1.5s;
+}
+
+.row-8{
+  animation-delay: 1.75s;
+}
+
+@keyframes animation-a{
+  0% { background-color: var(--purple-medium); }
+  50% { background-color: var(--cyan-medium); }
+  100% { background-color: var(--purple-medium); }
+}
+
+@keyframes animation-b{
+  0% { background-color: var(--cyan-medium); }
+  50% { background-color: var(--orange-medium); }
+  100% { background-color: var(--cyan-medium); }
+}
+
+@keyframes animation-c{
+  0% { background-color: var(--orange-medium); }
+  50% { background-color: var(--green-medium); }
+  100% { background-color: var(--orange-medium); }
+}
+
+@keyframes animation-d{
+  0% { background-color: var(--green-medium); }
+  50% { background-color: var(--red-medium); }
+  100% { background-color: var(--green-medium); }
+}
+
+@keyframes animation-e{
+  0% { background-color: var(--red-medium); }
+  50% { background-color: var(--blue-medium); }
+  100% { background-color: var(--red-medium); }
+}
+
+@keyframes animation-f{
+  0% { background-color: var(--blue-medium); }
+  50% { background-color: var(--purple-medium); }
+  100% { background-color: var(--blue-medium); }
 }
 
 
@@ -209,11 +323,11 @@ footer p.footer-license{
 
 /* Conditional content formatting ------------------------------------------ */
 @media only screen and (max-width: 1023px){
-  main{
+  main,nav{
     border-left: none;
     border-right: none;
   }
-  
+
   footer p.footer-updated, footer p.footer-license{
     float: none;
     text-align: center;

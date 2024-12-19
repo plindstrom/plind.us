@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="entree">
+  <name>Baked Penne with Turkey and Mushrooms</name>
+  <servings>8</servings>
+  <difficulty>Easy</difficulty>
+  <time>1 Hour 10 Minutes (20 min prep, 50 min cooking)</time>
+  <ingredients>
+    <ingredient>
+      <amount></amount>
+      <description>Cooking spray</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 tsp</amount>
+      <description>extra virgin olive oil</description>
+    </ingredient>
+    <ingredient>
+      <amount>3/4 lbs</amount>
+      <description>uncooked lean ground turkey</description>
+    </ingredient>
+    <ingredient>
+      <amount>2</amount>
+      <description>onions, chopped</description>
+    </ingredient>
+    <ingredient>
+      <amount>8 oz</amount>
+      <description>cremini mushrooms, thinly sliced</description>
+    </ingredient>
+    <ingredient>
+      <amount>1</amount>
+      <description>tbsp salt</description>
+    </ingredient>
+    <ingredient>
+      <amount>1</amount>
+      <description>tbsp garlic, minced</description>
+    </ingredient>
+    <ingredient>
+      <amount>1</amount>
+      <description>pinch red pepper flakes</description>
+    </ingredient>
+    <ingredient>
+      <amount>12 oz</amount>
+      <description>roasted red peppers, drained and chopped</description>
+    </ingredient>
+    <ingredient>
+      <amount>15 oz</amount>
+      <description>canned diced tomatoes</description>
+    </ingredient>
+    <ingredient>
+      <amount>30 oz</amount>
+      <description>canned tomato sauce</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 tbsp</amount>
+      <description>italian seasoning</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/2 cup</amount>
+      <description>basil, minced</description>
+    </ingredient>
+    <ingredient>
+      <amount>12 oz</amount>
+      <description>penne, cooked to al dente according to directions</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 cup</amount>
+      <description>shredded part-skim mozzarella cheese</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/4 cup</amount>
+      <description>parmesan cheese, grated</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Preheat the oven to 350 degrees fahrenheit.  Coat a large 3-quart casserole dish with cooking spray.  In a large skillet over medium-high heat, add turkey (¾ lbs), onions (2, chopped), and mushrooms (8 oz, thinly sliced).  Cook, stirring often, until the liquid has evaporated.</description>
+    </step>
+    <step number="2">
+      <description>Add salt (1 tbsp), garlic (1 tbsp, minced), red pepper flakes (1 pinch), roasted peppers (12 oz, drained and chopped), diced tomatoes (15 oz), tomato sauce (30 oz), Italian seasoning (1 tbsp) and basil (1/2 cup, minced).  Stir to mix and coat.</description>
+    </step>
+    <step number="3">
+      <description>Reduce heat to medium-low and simmer for 10 minutes.  Stir in the cooked penne (12 oz), 1/2 cup mozzarella, and 2 tbsp parmesan.</description>
+    </step>
+    <step number="4">
+      <description>Spoon the penne mixture into the casserole dish and sprinkle with remaining 1/2 cup mozzarella and 2 tbsp parmesan.  Bake until the cheese is bubbly and melted, and the dish is heated through, about 20 to 30 minutes.  Garnish with fresh basil (1/2 cup, minced).</description>
+    </step>
+  </directions>
+</recipe>

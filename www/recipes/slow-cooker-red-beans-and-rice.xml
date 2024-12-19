@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="entree">
+  <name>Slow Cooker Red Beans and Rice with Sausage</name>
+  <servings>8</servings>
+  <difficulty>Easy</difficulty>
+  <time>8 Hours and 20 Minutes (20 min prep, 8 hours cooking)</time>
+  <ingredients>
+    <ingredient>
+      <amount>1</amount>
+      <description>clove garlic, minced</description>
+    </ingredient>
+    <ingredient>
+      <amount>1</amount>
+      <description>red onion, chopped</description>
+    </ingredient>
+    <ingredient>
+      <amount>1</amount>
+      <description>rib celery, chopped</description>
+    </ingredient>
+    <ingredient>
+      <amount>1</amount>
+      <description>1 green pepper, chopped</description>
+    </ingredient>
+    <ingredient>
+      <amount>15 oz</amount>
+      <description>canned kidney beans, rinsed and drained</description>
+    </ingredient>
+    <ingredient>
+      <amount>14.5 oz</amount>
+      <description>canned diced tomatoes</description>
+    </ingredient>
+    <ingredient>
+      <amount>9 oz</amount>
+      <description>cooked chicken sausage, andouille-style and cut into bite-size pieces</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/4 tsp</amount>
+      <description>dried thyme</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/4 tsp</amount>
+      <description>black pepper</description>
+    </ingredient>
+    <ingredient>
+      <amount>6 cups</amount>
+      <description>fat free chicken broth</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 cup</amount>
+      <description>uncooked white rice</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Add garlic (1 clove, minced), onion (1, chopped), celery (1 rib, chopped), bell pepper (1, chopped), beans (15 oz, rinsed), tomatoes with their juices (14.5 oz) and sausage (9 oz, cut into bite-size pieces) into a slow cooker.  Add thyme (1/4 tsp), pepper (1/4 tsp), and broth (6 cups).  Stir to combine, cover and cook on low for 8 hours.</description>
+    </step>
+    <step number="2">
+      <description>Before serving, cook rice (1 cup dry) according to the directions on the package.  Serve the rice topped with red beans and sausage from the slow cooker.</description>
+    </step>
+  </directions>
+</recipe>

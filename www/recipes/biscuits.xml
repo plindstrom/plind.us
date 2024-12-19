@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="recipe.xsl"?>
+<recipe category="appetizer">
+  <name>Biscuits</name>
+  <servings>10</servings>
+  <difficulty>Moderate</difficulty>
+  <time>35 Minutes (10 min prep, 15 min resting, 10 min baking)</time>
+  <ingredients>
+    <ingredient>
+      <amount>2 cups</amount>
+      <description>self rising flour</description>
+    </ingredient>
+    <ingredient>
+      <amount>1/2 cup</amount>
+      <description>butter, grated</description>
+    </ingredient>
+    <ingredient>
+      <amount>1 cup</amount>
+      <description>buttermilk</description>
+    </ingredient>
+  </ingredients>
+  <directions>
+    <step number="1">
+      <description>Add flour (2 cups) and grated butter (1/2 cup) to a bowl.  The butter should be very cold when you grate it.  Gently mix to combine, and place the flour and butter mixture into the refrigerator for 10-15 minutes.</description>
+    </step>
+    <step number="2">
+      <description>Remove the mixture and add buttermilk (1 cup).  Stir with fork very lightly.</description>
+    </step>
+    <step number="2">
+      <description>On a floured surface, pour out and pat out the dough.  Fold it over and then pat it out again.  Be careful not to overwork the dough and keep it as cold as possible.</description>
+    </step>
+    <step number="2">
+      <description>Use a biscuit cutter to make the biscuits and place on a greased oven pan.  Bake at 450 degrees fahrenheit for 10-12 minutes.</description>
+    </step>
+  </directions>
+</recipe>
